@@ -1,0 +1,17 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark": [true, "single", "jsx-double"],
+        "object-literal-sort-keys": false,
+        "interface-name": false,
+        "max-classes-per-file": false,
+        "member-access": false,
+        "variable-name": false,
+        "no-console": false
+    },
+    "rulesDirectory": []
+}
