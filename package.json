@@ -10,7 +10,7 @@
   "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickdoth/ioc.git"
+    "url": "git+https://github.com/nickdoth/ff-ioc.git"
   },
   "keywords": [
     "dependency injection",
@@ -21,9 +21,9 @@
   "author": "Nick Ng <nick.doth@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nickdoth/ioc/issues"
+    "url": "https://github.com/nickdoth/ff-ioc/issues"
   },
-  "homepage": "https://github.com/nickdoth/ioc#readme",
+  "homepage": "https://github.com/nickdoth/ff-ioc#readme",
   "devDependencies": {
     "typescript": "^3.3.4000"
   }
