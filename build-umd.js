@@ -19,5 +19,4 @@ writeFileSync(join(__dirname, 'dist/umd.js'),
 })(function (require, exports) {
 ${readFileSync(join(__dirname, 'lib/index.js'))}
 });
-//# sourceMappingURL=index.js.map
 `);
