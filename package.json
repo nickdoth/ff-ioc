@@ -4,7 +4,8 @@
   "description": "Fail-fast yet minimum IoC container for TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "pretest": "tsc && node ./build-umd",
     "prepublishOnly": "tsc && node ./build-umd"
   },
   "types": "./lib/index.d.ts",
@@ -25,6 +26,9 @@
   },
   "homepage": "https://github.com/nickdoth/ff-ioc#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
     "typescript": "^3.3.4000"
   }
 }
