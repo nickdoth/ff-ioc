@@ -1,5 +1,7 @@
 # ff-ioc
 
+[![Build Status](https://travis-ci.org/nickdoth/ff-ioc.svg?branch=master)](https://travis-ci.org/nickdoth/ff-ioc)
+
 Fail-fast IoC container powered by typechecking from TypeScript
 
 `ff-ioc` aims to introduce a simple yet enforced way to declare dependency graph: as long as using well type-defined providers, no dependency mistake can be escaped from the TypeScript complier.
