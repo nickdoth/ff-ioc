@@ -73,7 +73,9 @@ const container = createContainer({
 container.friendService.getFriendsOfUser('xxxxxxx').then((users) => ...);
 ```
 
-## Concept of Fail-fast
+## Features
+
+### Fail-fast
 
 <!-- This library (or say code snippet) is nothing magical. It is written with 40+ lines of code in a single file. It creates an plain object with lazy-evaluating getters, which invokes provider functions you bind to the container, and finally use the return value as the injected instance... You can take 2 mins to read the code of `createContainer` and know everything about it ;) -->
 
@@ -127,4 +129,37 @@ const container = createContainer({
 });
 
 // TypeScript Error: Type 'Console' provides no match for the signature '(msg: string): void'
+```
+
+### Singletons
+
+`ff-ioc` treats all providers as singleton. For non-singleton, you can provide its creator instead of a instance:
+
+```typescript
+const container = createContainer({
+    friendService: provideFriendService,
+    userService: provideUserService,
+
+    userController = ({ userService }: { userService: UserService }) => {
+        return () => new UserController(userService);
+    },
+});
+```
+
+### Scopes
+
+You can create sub-scopes using helper function `createSubScope`:
+
+```typescript
+import createContainer, { createSubScope } from 'ff-ioc';
+
+const appContainer = createContainer({
+    friendService: provideFriendService,
+    userService: provideUserService,
+});
+
+const sessionContainer = createSubScope(appContainer, {
+    userController = ({ userService }: { userService: UserService }) => new UserController(userService),
+    session: createSession,
+});
 ```
