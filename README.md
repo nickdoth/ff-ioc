@@ -1,6 +1,6 @@
 # ff-ioc
 
-[![Build Status](https://travis-ci.org/nickdoth/ff-ioc.svg?branch=master)](https://travis-ci.org/nickdoth/ff-ioc)
+[![Build Status](https://travis-ci.org/nickdoth/ff-ioc.svg?branch=master)](https://travis-ci.org/nickdoth/ff-ioc) [![Greenkeeper badge](https://badges.greenkeeper.io/nickdoth/ff-ioc.svg)](https://greenkeeper.io/)
 
 Fail-fast IoC container powered by typechecking from TypeScript
 
