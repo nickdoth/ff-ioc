@@ -27,7 +27,7 @@
   "homepage": "https://github.com/nickdoth/ff-ioc#readme",
   "devDependencies": {
     "@types/jest": "^25.1.4",
-    "jest": "^24.8.0",
+    "jest": "^26.2.2",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
   }
